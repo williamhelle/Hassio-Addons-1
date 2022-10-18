@@ -83,6 +83,6 @@ COPY --from=WEBSOCKIFY /usr/local/bin/websockify /usr/local/bin/websockify
 COPY --from=SHORELINE /shoreline/shoreline /usr/local/bin/shoreline
 COPY --from=VNCMUX /vncmux/vncmux /usr/local/bin/vncmux
 
-ENTRYPOINT [ "/init" ]
+ENTRYPOINT [ "/" ]
 CMD []
 COPY root /
